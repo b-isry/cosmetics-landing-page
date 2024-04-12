@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh; 
+    background-color: #E9DFDE;
+    color: black;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;  
+    padding: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+}
+
+.brand{
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.purchase{
+    background-color:#CC5D64;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+.purchase:hover{
+    background-color: white;
+    color: #CC5D64;
+}
+.hero{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+}
+img{
+    width: 40vw;
+}
+.hero-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.description{
+    font-weight: 300;
+    margin: 12px 0;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 600px){
+    body{
+        overflow: scroll;
+    }
+    .nav-bar{
+        width:95%;
+    }
+    .brand{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .hero-title{
+        font-size: 24px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    img{
+        width: 80vw;
+    }
+    .hero-text{
+        text-align: center;
+    }
+
+}
